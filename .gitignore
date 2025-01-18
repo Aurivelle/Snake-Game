@@ -1,2 +1,5 @@
-"*.o" 
-"*.log" 
+echo "*.exe" > .gitignore
+echo "*.o" >> .gitignore
+echo "*.log" >> .gitignore
+git add .gitignore
+git commit -m "Add .gitignore file"
