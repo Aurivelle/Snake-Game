@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <windows.h>
+#include <stdio.h>
 #include "game.h"
 #include "utils.h"
 
@@ -7,6 +8,18 @@ int height = 20, width = 20;
 int gameover, score;
 int x, y, fruitx, fruity, flag;
 
+void gameOverScreen()
+{
+    system("cls");
+    printf("########################\n");
+    printf("#         GAME OVER    #\n");
+    printf("#       Your Score: %d #\n", score);
+    printf("#   Thanks for Playing #\n");
+    printf("########################\n");
+    printf("Press any key to quit\n");
+
+    getch();
+}
 void setup()
 {
     gameover = 0;
