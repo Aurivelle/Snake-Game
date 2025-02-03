@@ -14,6 +14,10 @@ int main()
         input(); // 處理用戶輸入
         logic(); // 更新遊戲邏輯
     }
+    if (gameover)
+    {
+        gameOverScreen();
+    }
 
     return 0;
 }
